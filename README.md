@@ -21,7 +21,6 @@
 
 - 사전에 제공된 에셋을 package manager를 통해 import 한 후, 플레이어 오브젝트에 적용
 
-![스크린샷 2023-11-29 오전 10.35.05.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ff3cb08f-147c-449e-bae5-8cfa582ec04d/762607be-42ef-45d0-9a3e-0d06f47262ab/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-29_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_10.35.05.png)
 
 ### 2. 캐릭터 이동
 
@@ -108,10 +107,10 @@ public class TopDownMovement : MonoBehaviour
 
 - 타일맵 오브젝트들을 생성하여, 에셋들로 받은 스프라이트 이미지들을 가져다 2D 공간에 배경들을 구성
 
-![스크린샷 2023-11-29 오전 11.19.11.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ff3cb08f-147c-449e-bae5-8cfa582ec04d/facd7e28-78a7-43db-8ab8-95a1317afa01/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-29_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_11.19.11.png)
+
 
 ### 4. 카메라 따라가기
 
 - 간단히 카메라 오브젝트를 플레이어의 하위 오브젝트로 연결 시키면 부모 오브젝트의 transition 값에 따라서 카메라는 이동함
 
-![스크린샷 2023-11-29 오전 11.20.11.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ff3cb08f-147c-449e-bae5-8cfa582ec04d/e2eac86d-362f-4594-90f7-c739cbc78095/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-29_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_11.20.11.png)
+
