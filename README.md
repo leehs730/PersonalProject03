@@ -114,3 +114,43 @@ public class TopDownMovement : MonoBehaviour
 - 간단히 카메라 오브젝트를 플레이어의 하위 오브젝트로 연결 시키면 부모 오브젝트의 transition 값에 따라서 카메라는 이동함
 
 
+## 추가기능
+
+---
+
+### 1. 캐릭터 애니메이션 추가
+
+- 제공한 에셋들 중 플레이어의 걷는 스프라이트 이미지들을 통해 애니메이션 구축
+
+### 2. 현재 시간 추가
+
+- UI 오브젝트에 Text를 추가하여 오른쪽 상단에 위치
+- Text 에다가 현재 시간을 반영하는 스크립트를 작성
+
+```csharp
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+// System, UnityEngine 추가
+
+public class TimeNowScript : MonoBehaviour
+{
+    // 텍스트 컴포넌트 추가
+    private Text _clockText;
+    
+    void Start()
+    {
+        // Canvas 오브젝트 하위에 있는 자식 컴포넌트 Text를 가져온다
+        _clockText = GetComponentInChildren<Text>();
+    }
+
+    
+    void Update()
+    {
+        // Text 부분에 현재 시:분 을 알려주는 메서드 추가, 이 메서드는 시간을 표시하는 다양한 메서드들이 있다. 
+        _clockText.text = DateTime.Now.ToShortTimeString();
+    }
+}
+```
