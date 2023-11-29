@@ -28,9 +28,4 @@ public class PlayerInputController : TopDownCharacterController
             CallLookEvent(newAim);
         }
     }
-
-    public void OnFire(InputValue value)
-    {
-        Debug.Log("OnFire" + value.ToString());
-    }
 }
